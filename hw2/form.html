@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HW2</title>
+    <title>HW2-Форма</title>
     <meta http-equiv="content-language" content="en"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 </head>
@@ -74,8 +74,28 @@
             <input type="radio" name="dexp" value="mid" title="junior"> Mid-Level Developer<br>
             <input type="radio" name="dexp" value="senior" title="junior"> Senior Developer<br>
         </div>
-        <div></div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="" disabled selected hidden>- Choose your country -</option>
+                <option value="UA">Ukraine</option>
+                <option value="USA">USA</option>
+                <option value="THA">Thailand</option>
+                <option value="ESP">Spain</option>
+            </select>
+        </div>
+        <div>
+            Skills<br>
+            <input type="checkbox" name="skills" value="html" title="html" checked>HTML<br>
+            <input type="checkbox" name="skills" value="css" title="css">CSS<br>
+            <input type="checkbox" name="skills" value="js" title="js">JavaScript<br>
+            <input type="checkbox" name="skills" value="r" title="r">R<br>
+            <input type="checkbox" name="skills" value="scala" title="scala">Scala<br>
+            <input type="checkbox" name="skills" value="haskell" title="haskell">Haskell
+        </div>
     </fieldset>
+    <button type="reset">Cancel</button>
+    <button type="submit">Submit</button>
 </form>
 </body>
 </html>
