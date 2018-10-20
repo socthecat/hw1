@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW2</title>
+    <meta http-equiv="content-language" content="en"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Profile settings</h1>
+<form action="form-info.php">
+    <fieldset>
+        <legend>Basic info</legend>
+        <input type="hidden" id="userId" name="userId" value="1337">
+        <div>
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" value="725">
+        </div>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="phoneNum">Phone number</label>
+            <input type="tel" name="phoneNum" id="phoneNum" placeholder="+380">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="myemail@placeholder.com">
+        </div>
+        <div>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Keep my e-mail address private<br>
+            We'll remove your public profile e-mail and use 1978331+username@users.noreplylocalhost</label>
+        </div>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label for="blogUrl">Blog URL</label>
+            <input type="url" name="blogUrl" id="blogUrl" placeholder="http://">
+        </div>
+        <div>
+            <label for="about">About me</label>
+            <textarea name="about" id="about"></textarea>
+        </div>
+        <div>
+            <label for="picture">Profile picture</label>
+            <input type="file" name="picture" id="picture">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Professional info</legend>
+        <div>
+            <label for="dts">Desire to study</label>
+            <input type="range" name="dts" id="dts" min="0" max="10">
+        </div>
+        <div>
+            <label for="exp">Experience</label>
+            <input type="number" name="exp" id="exp" min="0" max="99"> years
+        </div>
+        <div>
+            Development experience<br>
+            <input type="radio" name="dexp" value="learning" title="learning"> Learning to Program<br>
+            <input type="radio" name="dexp" value="junior" title="junior"> Junior Developer<br>
+            <input type="radio" name="dexp" value="mid" title="junior"> Mid-Level Developer<br>
+            <input type="radio" name="dexp" value="senior" title="junior"> Senior Developer<br>
+        </div>
+        <div></div>
+    </fieldset>
+</form>
+</body>
+</html>
