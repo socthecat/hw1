@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+html {
+    font-family: Roboto, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: #bf1e2e linear-gradient(to left, #bf1e2e, #f1592a);
+    width: 100%;
+    min-width: 1000px;
+}
+header h1 {
+    width: 18.9%;
+    height: 70px;
+    overflow: hidden;
+    float: left;
+    margin: 3px 42px 3px 10px;
+}
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+header nav li {
+    display: inline-block;
+}
+header nav li a, .lang__sel {
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    margin-left: -2px;
+    display: inline-block;
+    padding: 31px 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.lang__sel {
+    float: right;
+}
+.lang__sel::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #fff;
+}
+header nav li a:hover {
+    background-color: white;
+    color: #2a2a2a;
+    border-top: 2px solid white;
+}
+header nav li.active a {
+    border-top: 2px solid white;
+}
