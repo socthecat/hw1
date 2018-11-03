@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW2-Форма</title>
+    <meta http-equiv="content-language" content="en"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <style>li {list-style-type: none;} div {margin: 5px}</style>
+</head>
+<body>
+<h1>Profile settings</h1>
+<form action="https://postman-echo.com/post" method="post">
+    <fieldset>
+        <legend>Basic info</legend>
+        <input type="hidden" id="userId" name="userId" value="1337">
+        <div>
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" value="725" disabled>
+        </div>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="phoneNum">Phone number</label>
+            <input type="tel" name="phoneNum" id="phoneNum" placeholder="+380">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="myemail@placeholder.com">
+        </div>
+        <div>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Keep my e-mail address private<br>
+            We'll remove your public profile e-mail and use 1978331+username@users.noreplylocalhost</label>
+        </div>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label for="blogUrl">Blog URL</label>
+            <input type="url" name="blogUrl" id="blogUrl" placeholder="http://">
+        </div>
+        <div>
+            <label for="about">About me</label>
+            <textarea name="about" id="about"></textarea>
+        </div>
+        <div>
+            <label for="picture">Profile picture</label>
+            <input type="file" name="picture" id="picture">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Professional info</legend>
+        <div>
+            <label for="dts">Desire to study</label>
+            <input type="range" name="dts" id="dts" min="0" max="10">
+        </div>
+        <div>
+            <label for="exp">Experience</label>
+            <input type="number" name="exp" id="exp" min="0" max="99"> years
+        </div>
+        <div>
+            Development experience
+            <ul>
+                <li>
+                    <input type="radio" name="dexp" value="learning" title="learning" id="learning">
+                    <label for="learning">Learning to Program</label>
+                </li>
+                <li>
+                    <input type="radio" name="dexp" value="junior" title="junior" id="junior">
+                    <label for="junior">Junior Developer</label>
+                </li>
+                <li>
+                    <input type="radio" name="dexp" value="mid" title="mid" id="mid">
+                    <label for="mid">Mid-Level Developer</label>
+                </li>
+                <li>
+                    <input type="radio" name="dexp" value="senior" title="senior" id="senior">
+                    <label for="senior">Senior Developer</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected hidden>- Choose your country -</option>
+                <option value="UA">Ukraine</option>
+                <option disabled>----------------------</option>
+                <option value="US">USA</option>
+                <option value="TH">Thailand</option>
+                <option value="ES">Spain</option>
+            </select>
+        </div>
+        <div>
+            Skills
+            <ul>
+                <li>
+                    <input type="checkbox" name="skills" value="html" title="html" id="html" checked>
+                    <label for="html">HTML</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="skills" value="css" title="css" id="css">
+                    <label for="css">CSS</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="skills" value="js" title="js" id="js">
+                    <label for="js">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="skills" value="r" title="r" id="r">
+                    <label for="r">R</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="skills" value="scala" title="scala" id="scala">
+                    <label for="scala">Scala</label>
+                </li>
+               <li>
+                   <input type="checkbox" name="skills" value="haskell" title="haskell" id="haskell">
+                   <label for="haskell">Haskell</label>
+               </li>
+            </ul>
+        </div>
+    </fieldset>
+    <button type="reset">Cancel</button>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
